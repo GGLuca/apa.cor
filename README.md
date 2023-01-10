@@ -3,6 +3,8 @@
 
 # apa.cor - A correlation matrix in R, using APA style
 
+/github/last-commit/:user/:repo
+
 ## What it does:
 
 This single-function package is designed to be a fast way of creating a

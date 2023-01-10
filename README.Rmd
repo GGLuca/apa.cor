@@ -6,6 +6,8 @@ output: github_document
 
 # apa.cor - A correlation matrix in R, using APA style
 
+/github/last-commit/:user/:repo
+
 ## What it does:
 
 This single-function package is designed to be a fast way of creating a correlation matrix from a dataframe that includes the needed variables. It also produces means, standard deviations and NHS significance tests at various levels, with an export function for the clipboard.
