@@ -1,12 +1,17 @@
 Package: apa.cor
 Title: Generate a Correlation Matrix in APA Style
-Version: 0.0.0.9000
+Version: 0.0.0.94
 Authors@R: 
     person("George", "Gunnesch-Luca", , "george.gunnesch-luca@fau.de", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           comment = c(ORCID = "0000-0002-7563-8020"))
+Description: This function is designed to be a fast way of creating a correlation matrix from a dataframe that includes the needed variables. It also produces means, standard deviations and NHS significance tests at various levels, with an export function for the clipboard.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    papaja,
+    psych
