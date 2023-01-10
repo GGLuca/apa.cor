@@ -3,7 +3,8 @@
 
 # apa.cor - A correlation matrix in R, using APA style
 
-/github/last-commit/:user/:repo
+![GitHub last
+commit](https://img.shields.io/github/last-commit/ggluca/apa.cor?logo=bitcoin&style=plastic)
 
 ## What it does:
 
