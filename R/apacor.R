@@ -12,17 +12,6 @@
 
 apa.cor<- function(x, export=FALSE) {
 
-  # Check if the required packages are installed
-  packages <- c("papaja")
-  if (!all(packages %in% installed.packages())) {
-
-    # If package is not installed, install it
-    install.packages(packages[!packages %in% installed.packages()])
-  }
-
-  # Load the required packages
-  library(papaja)
-
   r <-psych::corr.test(x)$r	#taking just the correlation matrix; no N, or p
   p <-psych::corr.test(x)$p	#taking the p*s
 
