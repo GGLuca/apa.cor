@@ -1,6 +1,6 @@
 Package: apa.cor
 Title: Generate a Correlation Matrix in APA Style
-Version: 0.0.0.96
+Version: 0.0.0.97
 Authors@R: 
     person("George", "Gunnesch-Luca", , "george.gunnesch-luca@fau.de", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7563-8020"))
