@@ -14,9 +14,8 @@ It also produces means, standard deviations and NHS significance tests
 at various levels, with an export function for the clipboard.
 
 It is also a good tool of creating an S3 object that plugs in well into
-the the `papaja: Prepare APA Journal Articles with R Markdown` package,
-to produce a correlation table afer the APA manuscript guidelines (6th
-Edition).
+the `papaja: Prepare APA Journal Articles with R Markdown` package, to
+produce a correlation table afer the APA manuscript guidelines.
 
 # Installation
 
@@ -57,11 +56,16 @@ The function also has an export option `export = TRUE`, that copies the
 output into the clipboard, for further manipulation such a simple paste
 into Microsoft Word.
 
+``` r
+apa.cor(x, export = TRUE)
+```
+
 ## Better usage
 
 Since the function outputs a proper S3 object, it is perfect for
 integrating it into the [papaja](https://github.com/crsh/papaja)
-package.
+package, be it to create html tables or better yet, beautifully
+formatted PDF files.
 
 ``` r
 library(papaja)
@@ -72,19 +76,20 @@ bfi %>%
 
 apa_table(
   .,
-  , caption = "Variable Means and Correlations Between Agreeableness Items"
+  , caption = "Variable Means, Standard Deviations, and Correlations Between Agreeableness Items"
   , note = "This table was created with apa_table()."
   , escape = TRUE
 )
 ```
 
 <caption>
-(#tab:unnamed-chunk-3)
+(#tab:unnamed-chunk-4)
 </caption>
 
 <div custom-style="Table Caption">
 
-*Variable Means and Correlations Between Agreeableness Items*
+*Variable Means, Standard Deviations, and Correlations Between
+Agreeableness Items*
 
 </div>
 

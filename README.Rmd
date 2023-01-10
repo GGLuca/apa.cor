@@ -12,7 +12,7 @@ output: github_document
 
 This single-function package is designed to be a fast way of creating a correlation matrix from a dataframe that includes the needed variables. It also produces means, standard deviations and NHS significance tests at various levels, with an export function for the clipboard.
 
-It is also a good tool of creating an S3 object that plugs in well into the the `papaja: Prepare APA Journal Articles with R Markdown` package, to produce a correlation table afer the APA manuscript guidelines (6th Edition).
+It is also a good tool of creating an S3 object that plugs in well into the `papaja: Prepare APA Journal Articles with R Markdown` package, to produce a correlation table afer the APA manuscript guidelines.
 
 # Installation
 
@@ -22,7 +22,6 @@ To install the latest (see latest changes below), type the following commands in
 library(devtools)
 devtools::install_github("GGLuca/apa.cor")
 ```
-
 
 ## Example of Recommended Usage
 
@@ -36,18 +35,21 @@ library(apa.cor)
 bfi %>% 
   select(A1:A5) %>% 
   apa.cor()
-
 ```
 
 ## Supplemental Argument
 
 The function also has an export option `export = TRUE`, that copies the output into the clipboard, for further manipulation such a simple paste into Microsoft Word.
 
+```{r eval=FALSE}
+apa.cor(x, export = TRUE)
+```
+
 ## Better usage
 
-Since the function outputs a proper S3 object, it is perfect for integrating it into the [papaja](https://github.com/crsh/papaja) package. 
+Since the function outputs a proper S3 object, it is perfect for integrating it into the [papaja](https://github.com/crsh/papaja) package, be it to create html tables or better yet, beautifully formatted PDF files.
 
-```{r, warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE, fig.cap="Table 1"}
 library(papaja)
 
 bfi %>% 
@@ -56,7 +58,7 @@ bfi %>%
 
 apa_table(
   .,
-  , caption = "Variable Means and Correlations Between Agreeableness Items"
+  , caption = "Variable Means, Standard Deviations, and Correlations Between Agreeableness Items"
   , note = "This table was created with apa_table()."
   , escape = TRUE
 )
