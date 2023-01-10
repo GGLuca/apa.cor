@@ -43,9 +43,9 @@ The function also has an export option `export = TRUE`, that copies the output i
 
 ## Better usage
 
-Since the function outputs a proper S3 object, it is perfect for integrating it into the [papaja](https://github.com/crsh/papaja) package.
+Since the function outputs a proper S3 object, it is perfect for integrating it into the [papaja](https://github.com/crsh/papaja) package. 
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 library(papaja)
 
 bfi %>% 
@@ -54,7 +54,7 @@ bfi %>%
 
 apa_table(
   .,
-  , caption = "Descriptive statistics of correct recall by dosage."
+  , caption = "Variable Means and Correlations Between Agreeableness Items"
   , note = "This table was created with apa_table()."
   , escape = TRUE
 )

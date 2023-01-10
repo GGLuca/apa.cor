@@ -62,18 +62,14 @@ package.
 
 ``` r
 library(papaja)
-```
 
-    ## Lade nötiges Paket: tinylabels
-
-``` r
 bfi %>% 
   select(A1:A5) %>% 
   apa.cor() %>% 
 
 apa_table(
   .,
-  , caption = "Descriptive statistics of correct recall by dosage."
+  , caption = "Variable Means and Correlations Between Agreeableness Items"
   , note = "This table was created with apa_table()."
   , escape = TRUE
 )
@@ -85,7 +81,7 @@ apa_table(
 
 <div custom-style="Table Caption">
 
-*Descriptive statistics of correct recall by dosage.*
+*Variable Means and Correlations Between Agreeableness Items*
 
 </div>
 
