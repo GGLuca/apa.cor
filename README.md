@@ -18,38 +18,14 @@ Edition).
 ## Example of recommended Usage
 
 ``` r
-library(tidyverse)    #load tidyverse
-```
-
-    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
-    ## ✔ ggplot2 3.4.0      ✔ purrr   1.0.0 
-    ## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
-    ## ✔ tidyr   1.2.1      ✔ stringr 1.5.0 
-    ## ✔ readr   2.1.3      ✔ forcats 0.5.2 
-    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter() masks stats::filter()
-    ## ✖ dplyr::lag()    masks stats::lag()
-
-``` r
-library(psych) #load package psych for the `bfi`dataset
-```
-
-    ## 
-    ## Attache Paket: 'psych'
-    ## 
-    ## Die folgenden Objekte sind maskiert von 'package:ggplot2':
-    ## 
-    ##     %+%, alpha
-
-``` r
+library(tidyverse)    # load Tidyverse
+library(psych)        # load package psych for the `bfi`dataset
 library(apa.cor)
 
 bfi %>% 
   select(A1:A5) %>% 
   apa.cor()
 ```
-
-    ## Lade nötiges Paket: tinylabels
 
     ##       M   SD      1     2     3     4
     ## A1 2.41 1.41                         

@@ -14,14 +14,15 @@ It is also a good tool of creating an S3 object that plugs in well into the the 
 
 ## Example of recommended Usage
 
-```{r}
-library(tidyverse)    #load tidyverse
-library(psych) #load package psych for the `bfi`dataset
+```{r, message=FALSE}
+library(tidyverse)    # load Tidyverse
+library(psych)        # load package psych for the `bfi`dataset
 library(apa.cor)
 
 bfi %>% 
   select(A1:A5) %>% 
   apa.cor()
+
 ```
 
 ## Raw output
