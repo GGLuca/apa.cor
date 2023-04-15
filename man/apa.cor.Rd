@@ -2,22 +2,25 @@
 % Please edit documentation in R/apacor.R
 \name{apa.cor}
 \alias{apa.cor}
-\title{A correlation matrix in R, using APA style}
+\title{APA-Style Correlation Matrix}
 \usage{
 apa.cor(x, export = FALSE)
 }
 \arguments{
 \item{x}{A dataframe with the variables of interest.}
 
-\item{export}{Copies the resulted dataframe into the clipboard.}
+\item{export}{Copies the resulted dataframe into the clipboard if set to TRUE (default is FALSE).}
 }
 \value{
-A dataframe
+A formatted dataframe representing the APA-style correlation matrix.
 }
 \description{
-A correlation matrix in R, using APA style
+This function calculates a correlation matrix in APA (American Psychological Association) style
+and returns the result as a formatted dataframe. Optionally, it can export the dataframe to the clipboard.
 }
 \examples{
+# Using the airquality dataset as an example
 x <- airquality
-apa.cor(x, export = ",")
+apa_correlation_matrix <- apa.cor(x, export = FALSE)
+print(apa_correlation_matrix)
 }

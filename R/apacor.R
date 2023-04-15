@@ -1,14 +1,19 @@
-#' A correlation matrix in R, using APA style
+#' APA-Style Correlation Matrix
+#'
+#' This function calculates a correlation matrix in APA (American Psychological Association) style
+#' and returns the result as a formatted dataframe. Optionally, it can export the dataframe to the clipboard.
 #'
 #' @param x A dataframe with the variables of interest.
-#' @param export Copies the resulted dataframe into the clipboard.
+#' @param export Copies the resulted dataframe into the clipboard if set to TRUE (default is FALSE).
 #'
-#' @return A dataframe
+#' @return A formatted dataframe representing the APA-style correlation matrix.
 #' @export
 #'
 #' @examples
+#' # Using the airquality dataset as an example
 #' x <- airquality
-#' apa.cor(x, export = ",")
+#' apa_correlation_matrix <- apa.cor(x, export = FALSE)
+#' print(apa_correlation_matrix)
 
 apa.cor<- function(x, export=FALSE) {
 
