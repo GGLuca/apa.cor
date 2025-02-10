@@ -42,8 +42,8 @@ apa.cor<- function(x, export=FALSE) {
   Rnew
 
   Rnew <- cbind(round(psych::describe(x)[,3:4],2), Rnew)		     #describe x, M sD - put them in the matrix
-  colnames(Rnew)[1:2] <- c("M","SD")					      		#Beschriftung der neuen Spalten
-  Rnew <- Rnew[,1:(ncol(Rnew)-1)]							        	#delete the last column (ugly)
+  colnames(Rnew)[1:2] <- c("M","SD")					      		         #Beschriftung der neuen Spalten
+  Rnew <- Rnew[,1:(ncol(Rnew)-1)]							                  	#delete the last column (ugly)
 
   #export to clipboard
 
