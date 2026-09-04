@@ -3,8 +3,12 @@
 
 # apa.cor - A correlation matrix in R, using APA style
 
-![GitHub last
-commit](https://img.shields.io/github/last-commit/ggluca/apa.cor?logo=bitcoin&style=plastic)
+<figure>
+<img
+src="https://img.shields.io/github/last-commit/ggluca/apa.cor?logo=bitcoin&amp;style=plastic"
+alt="GitHub last commit" />
+<figcaption aria-hidden="true">GitHub last commit</figcaption>
+</figure>
 
 ## What it does:
 
@@ -67,44 +71,10 @@ integrating it into the [papaja](https://github.com/crsh/papaja)
 package, be it to create html tables or better yet, beautifully
 formatted PDF files.
 
-``` r
-library(papaja)
-
-bfi %>% 
-  select(A1:A5) %>% 
-  apa.cor() %>% 
-
-apa_table(
-  .,
-  , caption = "Variable Means, Standard Deviations, and Correlations Between Agreeableness Items"
-  , note = "This table was created with apa_table()."
-  , escape = TRUE
-)
-```
-
-<caption>
-(#tab:unnamed-chunk-4)
-</caption>
-
-<div custom-style="Table Caption">
-
-*Variable Means, Standard Deviations, and Correlations Between
-Agreeableness Items*
-
-</div>
-
-|     | M    | SD   | 1        | 2       | 3       | 4       |
-|-----|:-----|:-----|:---------|:--------|:--------|:--------|
+|     |    M |   SD | 1        | 2       | 3       | 4       |
+|:----|-----:|-----:|:---------|:--------|:--------|:--------|
 | A1  | 2.41 | 1.41 |          |         |         |         |
 | A2  | 4.80 | 1.17 | -.34\*\* |         |         |         |
 | A3  | 4.60 | 1.30 | -.27\*\* | .49\*\* |         |         |
 | A4  | 4.70 | 1.48 | -.15\*\* | .34\*\* | .36\*\* |         |
 | A5  | 4.56 | 1.26 | -.18\*\* | .39\*\* | .50\*\* | .31\*\* |
-
-<div custom-style="Compact">
-
-*Note.* This table was created with apa_table().
-
-</div>
-
- 

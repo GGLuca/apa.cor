@@ -49,18 +49,10 @@ apa.cor(x, export = TRUE)
 
 Since the function outputs a proper S3 object, it is perfect for integrating it into the [papaja](https://github.com/crsh/papaja) package, be it to create html tables or better yet, beautifully formatted PDF files.
 
-```{r, warning=FALSE, message=FALSE, fig.cap="Table 1"}
-library(papaja)
-
-bfi %>% 
-  select(A1:A5) %>% 
-  apa.cor() %>% 
-
-apa_table(
-  .,
-  , caption = "Variable Means, Standard Deviations, and Correlations Between Agreeableness Items"
-  , note = "This table was created with apa_table()."
-  , escape = TRUE
-)
+```{r, echo=FALSE, message=FALSE}
+bfi %>%
+  select(A1:A5) %>%
+  apa.cor() %>%
+  knitr::kable()
 ```
 
