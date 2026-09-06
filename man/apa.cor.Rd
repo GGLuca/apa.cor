@@ -9,7 +9,7 @@ apa.cor(x, export = FALSE)
 \arguments{
 \item{x}{A dataframe with the variables of interest.}
 
-\item{export}{Copies the resulted dataframe into the clipboard if set to TRUE (default is FALSE).}
+\item{export}{If TRUE, copies the formatted matrix to the system clipboard via clipr (default is FALSE). The matrix is returned either way.}
 }
 \value{
 A formatted dataframe representing the APA-style correlation matrix.
