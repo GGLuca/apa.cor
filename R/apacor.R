@@ -4,7 +4,7 @@
 #' and returns the result as a formatted dataframe. Optionally, it can export the dataframe to the clipboard.
 #'
 #' @param x A dataframe with the variables of interest.
-#' @param export Copies the resulted dataframe into the clipboard if set to TRUE (default is FALSE).
+#' @param export If TRUE, copies the formatted matrix to the system clipboard via clipr (default is FALSE). The matrix is returned either way.
 #'
 #' @return A formatted dataframe representing the APA-style correlation matrix.
 #' @export
@@ -47,13 +47,9 @@ apa.cor<- function(x, export=FALSE) {
 
   #export to clipboard
 
-  if (export==TRUE){
-    result<-write.table(Rnew
-                        , "clipboard"
-                        , sep=";"
-                        , row.names=FALSE)
+  if (isTRUE(export)) {
+    clipr::write_clip(Rnew, sep = ";", row.names = FALSE)
   }
-  else result <- Rnew
-  return(result)
+  return(Rnew)
 }
 
