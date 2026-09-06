@@ -14,7 +14,7 @@ alt="GitHub last commit" />
 
 This single-function package is designed to be a fast way of creating a
 correlation matrix from a dataframe that includes the needed variables.
-It also produces means, standard deviations and NHS significance tests
+It also produces means, standard deviations and NHST significance tests
 at various levels, with an export function for the clipboard.
 
 It is also a good tool of creating an S3 object that plugs in well into

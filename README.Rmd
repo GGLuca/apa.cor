@@ -10,7 +10,7 @@ output: github_document
 
 ## What it does:
 
-This single-function package is designed to be a fast way of creating a correlation matrix from a dataframe that includes the needed variables. It also produces means, standard deviations and NHS significance tests at various levels, with an export function for the clipboard.
+This single-function package is designed to be a fast way of creating a correlation matrix from a dataframe that includes the needed variables. It also produces means, standard deviations and NHST significance tests at various levels, with an export function for the clipboard.
 
 It is also a good tool of creating an S3 object that plugs in well into the `papaja: Prepare APA Journal Articles with R Markdown` package, to produce a correlation table afer the APA manuscript guidelines.
 
