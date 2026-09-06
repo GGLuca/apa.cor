@@ -4,14 +4,15 @@ Version: 0.0.0.98
 Authors@R: 
     person("George", "Gunnesch-Luca", , "george.gunnesch-luca@fau.de", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7563-8020"))
-Description: This function is designed to be a fast way of creating a correlation matrix from a dataframe that includes the needed variables. It also produces means, standard deviations and NHS significance tests at various levels, with an export function for the clipboard.
+Description: This function is designed to be a fast way of creating a correlation matrix from a dataframe that includes the needed variables. It also produces means, standard deviations and NHST significance tests at various levels, with an export function for the clipboard.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
     papaja,
-    psych
+    psych,
+    clipr
+Config/roxygen2/version: 8.1.0
